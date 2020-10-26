@@ -37,7 +37,7 @@ library(RColorBrewer)
 ###############set the working path##############
 
 setwd("CT26 tumor shBCL9 scRNAseq results_out3")
-hsBCL9_pbmc_part_filtered_endo <-readRDS("hsBCL9_single_cell_cancer_atlas_matrixlog_final_pbmc_part.rds")
+hsBCL9_pbmc_part_filtered_endo <-readRDS("hsBCL9_pbmc_part_filtered_endo.rds")
 hsBCL9_pbmc_part_filtered<- hsBCL9_pbmc_part_filtered_endo[,which(hsBCL9_pbmc_part_filtered_endo$seurat_clusters %in% c(1:4))]
 
 ################################################################
